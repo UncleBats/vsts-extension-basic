@@ -1,0 +1,52 @@
+{
+    "manifestVersion": 1,
+    "id": "first-extension",
+    "version": "0.1.1",
+    "name": "First extension",
+    "description": "An extension.",
+    "publisher": "publisher name",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+            }
+        ],
+    "icons": {
+        "default": "static/images/logo.png"
+     },
+    "contributions": [
+        {
+            "id": "Publishername.Extensions.First",
+            "type": "ms.vss-web.hub",
+            "includes": ["ms.vss-releaseManagement-web.release-service-data-external"],
+            "description": "Adds a 'First' hub to the release hub group.",
+            "targets": [
+                "ms.vss-build-web.build-release-hub-group"
+                ],
+            "properties": {
+                "name": "Release",
+                "order": 99,
+                "uri": "static/index.html"
+            }
+        }
+    ],
+    "scopes": [
+        "vso.work",
+        "vso.build_execute",
+        "vso.release_manage"
+    ],
+    "files": [
+        {
+            "path": "dist",
+            "addressable": true
+        },
+        {
+            "path": "static",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}

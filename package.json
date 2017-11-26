@@ -1,0 +1,29 @@
+{
+  "name": "Home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickSegaar/vsts-extension-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickSegaar/vsts-extension-basic/issues"
+  },
+  "homepage": "https://github.com/ErickSegaar/vsts-extension-basic#readme",
+  "dependencies": {
+    "@types/jquery": "^3.2.16",
+    "@types/q": "^1.0.6",
+    "vss-web-extension-sdk": "^4.125.2"
+  },
+  "devDependencies": {
+    "tfx-cli": "^0.4.11",
+    "typescript": "^2.6.1"
+  }
+}
